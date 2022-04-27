@@ -1,8 +1,13 @@
 // import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import ClosureCard from './ClosureCard';
 import RatingCard from './RatingCard';
 
 function App() {
+
+  const [rating, setRating] = useState(null);
+
   return (
     <div className="App">
       {/* <header className="App-header">
@@ -19,7 +24,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <RatingCard/>
+      {rating === null ? <RatingCard updateRating={setRating}/> : <ClosureCard rating={rating}/>}
     </div>
   );
 }

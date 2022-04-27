@@ -58,12 +58,12 @@ body {
   color: white;
 }
 
-.rating-number.active {
+.rating-label-container.active {
   background-color: #FB7712 ;
   color: white;
 }
 
-.btn-submit{
+.btn-submit {
   width: 100%;
   height: 30px;
   background-color: #FB7712;
@@ -74,6 +74,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.closure-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 300px;
+  max-height: 400px;
+  padding: 20px;
+  row-gap: 10px;
+  text-align: center;
+  background-color: #1E242E;
+  border-radius: 15px;
+}
+
+.show-rating-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+  border-radius: 10px;
+  background-color: #272E38;
+  color:#FB7712;
+  font-size: 14px;
 }
 
 /* .rating-label-icon {
